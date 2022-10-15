@@ -8,6 +8,9 @@ public class DestroyObj : MonoBehaviour
     void OnCollisionEnter(Collision other) {
         if (other.collider.tag == "Bullet"){
             Destroy(obj_to_destroy, 0.2f);
+            if (this.tag == "Target"){
+                TextManager.instance.AddPoint();
+            }
         }
     }
 }

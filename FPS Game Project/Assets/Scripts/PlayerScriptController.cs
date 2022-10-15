@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScriptController : MonoBehaviour
+public class PlayerScriptController : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other) {
         if (other.collider.tag == "Ground"){
